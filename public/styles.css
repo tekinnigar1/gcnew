@@ -25,7 +25,7 @@ header {
 
 hr {
   height: 1px;
-  border-width: 0;
+  border-width: 0 !important;
   background-color: #292929;
 }
 

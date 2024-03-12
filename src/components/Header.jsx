@@ -37,7 +37,7 @@ function Header() {
           </div>
         </div>
       </header>
-      <hr />
+      <hr class="my-0 opacity-100" />
     </>
   );
 }

@@ -90,7 +90,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 295px;
+  /* max-width: 295px; */
   /* height: 382px; */
   border-radius: 17px;
   border: 1px;
@@ -235,6 +235,7 @@ header a {
   margin-bottom: 56px;
 } */
 .mainImages {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,20 +244,20 @@ header a {
 
 #Ellipse2 {
   position: absolute;
-  top: 333.82px;
-  width: 535.38px;
-  height: 91.76px;
+  /* top: 333.82px; */
+  /* width: 535.38px; */
+  /* height: 91.76px; */
   border: 2px;
-  /*margin-top: 96px;*/
+  margin-top: 159px;
 }
 
 #Ellipse1 {
   position: absolute;
-  top: 319.11px;
-  width: 748.13px;
-  height: 129.17px;
+  /* top: 319.11px; */
+  /* width: 748.13px; */
+  /* height: 129.17px; */
   border: 4px;
-  /*margin-top: 96px;*/
+  margin-top: 169px;
 }
 
 #mercedesImage {
@@ -264,6 +265,7 @@ header a {
   width: 514px;
   height: 143px;
   margin-top: 42px;
+  z-index: 0;
 }
 
 #Reservation-font {
@@ -295,7 +297,7 @@ header a {
 #lookvehiclesBT {
   width: 157px;
   height: 43px;
-  margin-top: 59px;
+  margin-top: 43px;
   margin-right: 57.5px;
   border-radius: 8px;
   background: #000000;
@@ -384,7 +386,7 @@ header a {
   margin-top: 7px;
 }
 
-h1 {
+#vehiclestitle {
   width: 93px;
   /* height: 27px; */
   font-family: "Inter", sans-serif;
@@ -411,6 +413,14 @@ h1 {
   margin-top: -116px;
 }
 
+#barsicon {
+  display: none;
+  width: 20px;
+}
+#closebutton {
+  display: none;
+}
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -423,7 +433,168 @@ h1 {
 }
 
 @media (max-width: 576px) {
-  .links {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+    margin: 0;
+  }
+  .vehicles-container {
+    padding: 25px;
+  }
+  .divdatebox {
+    padding: 25px;
+  }
+  .vehicles-container {
+    margin-top: 0px;
+  }
+
+  .pickupplacebox {
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 0px;
+    align-content: unset;
+    flex-wrap: unset;
+  }
+  .pickuptimebox {
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 0px;
+    align-content: unset;
+    flex-wrap: unset;
+  }
+  .dropoffbox {
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 0px;
+    align-content: unset;
+    flex-wrap: unset;
+  }
+
+  #lookvehiclesBT {
+    width: 90%;
+    margin-top: 0px;
+    margin-right: 0px;
+    display: block;
+    margin: auto;
+  }
+
+  #datedropoff {
+    width: unset;
+  }
+
+  #datepickup {
+    width: unset;
+  }
+
+  .rectangleDateBox {
+    padding: 24px;
+  }
+
+  .col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #mercedesImage {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin-top: 42px;
+  }
+
+  #contentTitle {
+    font-size: 22px;
+  }
+  #Reservation-font {
     display: none;
+  }
+  .contentsection {
+    height: 420px;
+  }
+
+  .container1 {
+    position: relative;
+    margin-left: 53px;
+    margin-right: 53px;
+  }
+
+  .navbarLinksisopen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    /* border-top: 93px solid #eee; */
+    width: 100%;
+    top: 90px;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    position: fixed;
+    height: 100%;
+    z-index: 100;
+    left: 0px;
+    transition: 0.5s border-top;
+  }
+  .navbarLinks {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+  }
+
+  .links {
+    margin-top: 30px;
+  }
+  header a {
+    color: black;
+    text-decoration: none;
+  }
+
+  #barsicon {
+    display: block;
+    width: 35px;
+    margin-top: 28px;
+    height: 33px;
+  }
+  #barsicon:hover {
+    filter: brightness(4.5);
+  }
+  #barsiconisopen {
+    display: none;
+  }
+
+  #closebutton {
+    display: none;
+  }
+  #closebuttonisopen {
+    display: block;
+    margin-top: 32px;
+    margin-left: -431px;
+  }
+
+  #closebuttonisclose {
+    display: none;
+  }
+  .headerclass {
+    display: block;
+  }
+  .headerclassinopendrop {
+    position: fixed;
+    z-index: 1000;
+    width: 200%;
   }
 }

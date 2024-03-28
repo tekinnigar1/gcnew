@@ -6,6 +6,7 @@ import Vehicles from "../pages/Vehicles.js";
 import Support from "../pages/Support.js";
 import Contact from "../pages/Contact.js";
 import News from "../pages/News.js";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 
 function App() {
   return (

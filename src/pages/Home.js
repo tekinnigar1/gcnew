@@ -23,7 +23,9 @@ function Home() {
               <Pickdatebox />
             </div>
             <div className="vehicles-container">
-              <h1>Vehicles</h1>
+              <p className="mb-0" id="vehiclestitle">
+                Vehicles
+              </p>
               {/* remove next line please */}
               {/* no camel case */}
               <div className="cardsInARow">

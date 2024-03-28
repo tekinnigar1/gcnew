@@ -6,7 +6,9 @@ function Pickdatebox() {
       <div className="row">
         <div className="col-12 col-md-auto">
           <div className="pickupplacebox">
-            <p id="pickupofficeP">Pick up Office</p>
+            <p className="mb-0" id="pickupofficeP">
+              Pick up Office
+            </p>
             <div>
               <img id="locationVector" src="Frame.png" alt="location-vector" />
               <p id="pickuplocation">Istanbul - Vadistanbul</p>
@@ -16,14 +18,20 @@ function Pickdatebox() {
 
         <div className="col-12 col-md-auto">
           <div className="pickuptimebox">
-            <p>Pick up time</p>
-            <p id="datepickup"> 01/01/2024</p>
+            <p className="mb-0">Pick up time</p>
+            <p className="mb-0" id="datepickup">
+              {" "}
+              01/01/2024
+            </p>
           </div>
         </div>
         <div className="col-12 col-md-auto">
           <div className="dropoffbox">
-            <p>Drop off time</p>
-            <p id="datedropoff"> 03/01/2024</p>
+            <p className="mb-0">Drop off time</p>
+            <p className="mb-0" id="datedropoff">
+              {" "}
+              03/01/2024
+            </p>
           </div>
         </div>
 
